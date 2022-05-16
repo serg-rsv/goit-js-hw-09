@@ -8,9 +8,9 @@ function onBtnCreateClick(e) {
   e.preventDefault();
 
   const data = {
-    delay: Number(form.delay.value),
-    step: Number(form.step.value),
-    amount: Number(form.amount.value),
+    delay: Number(e.currentTarget.elements.delay.value),
+    step: Number(e.currentTarget.elements.step.value),
+    amount: Number(e.currentTarget.elements.amount.value),
   };
 
   let nextDelay = data.delay;
